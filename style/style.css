@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    background-color: rgb(24, 27, 31);
+    height: 100vh;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4,1fr);
+    padding: 15px;
+}
+section div img{
+    width: 20%;
+}
+section div{
+    text-align: center;
+    color: white;
+    background-color: rgb(35, 38, 43);
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    padding: 15px;
+}
+section div article{
+    display: grid;
+    gap: 1.5rem;
+    justify-items: center;
+}
+section .box:hover{
+    background-color: crimson;
+    transition-duration: 0.5s;
+}
+section .box1{
+    grid-column: span 2;
+}
+section .box2{
+    grid-row: span 2;
+}
+section .box4{
+    grid-row: span 2;
+}
+section .box7{
+    grid-column: span 3;
+}
+
+@media screen and (max-width:600px){
+    section .box{
+        grid-column: span 4;
+    }
+    section{
+        height: 300vh;
+    }
+
+}
